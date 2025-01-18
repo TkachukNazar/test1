@@ -14,12 +14,12 @@ document.getElementById("Show").addEventListener("click", function () {
 });
 
 document.getElementById("+").addEventListener("click", function () {
-  let name = prompt("name");
-  let mark = +prompt("mark");
+  let name = prompt("Enter name and surname of the student: ");
+  let mark = +prompt("Enter mark of the student: ");
   students[name] = mark;
 });
 document.getElementById("-").addEventListener("click", function () {
-  let name = prompt("name");
+  let name = prompt("Enter name and surname of the student: ");
   delete students[name];
 });
 document.getElementById("Average").addEventListener("click", function () {
